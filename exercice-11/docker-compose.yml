@@ -1,0 +1,14 @@
+services:
+  app-spring:
+    image: maven:3.9-eclipse-temurin-17
+    container_name: spring-boot-app
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=dev
+    volumes:
+      - .:/app # Permet de voir les logs ou fichiers localement si besoin
+      - ../.m2:/root/.m2 # Monte le cache Maven local
+    command: tail -f /dev/null # Garde le conteneur en vie pour pouvoir exécuter des commandes à l'intérieur
+    # ACCES CONTENEUR TERMINAL
+    # docker exec -it spring-boot-app bash
