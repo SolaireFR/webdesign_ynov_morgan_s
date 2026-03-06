@@ -10,10 +10,10 @@
         <relativePath/>
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>exercice11</artifactId>
+    <artifactId>exercices</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>exercice11</name>
-    <description>exercice11</description>
+    <name>exercices</name>
+    <description>exercices</description>
     <url />
     <licenses>
         <license />

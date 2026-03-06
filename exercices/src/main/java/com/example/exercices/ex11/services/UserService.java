@@ -1,7 +1,7 @@
-package com.example.exercice11.services;
+package com.example.exercices.ex11.services;
 
-import com.example.exercice11.entities.User;
-import com.example.exercice11.entities.repositories.UserRepository;
+import com.example.exercices.ex11.entities.User;
+import com.example.exercices.ex11.entities.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

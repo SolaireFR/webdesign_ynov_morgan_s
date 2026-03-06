@@ -3,7 +3,7 @@ spring:
     mongodb:
       host: localhost
       port: 27017
-      database: exercice11
+      database: exercices
       username: root
       password: "EXO11hjkl"
       authentication-database: admin

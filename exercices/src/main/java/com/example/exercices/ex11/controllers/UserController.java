@@ -1,7 +1,7 @@
-package com.example.exercice11.controllers;
+package com.example.exercices.ex11.controllers;
 
-import com.example.exercice11.entities.User;
-import com.example.exercice11.services.UserService;
+import com.example.exercices.ex11.entities.User;
+import com.example.exercices.ex11.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

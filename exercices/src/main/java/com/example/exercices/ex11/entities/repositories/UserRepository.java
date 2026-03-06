@@ -1,6 +1,6 @@
-package com.example.exercice11.entities.repositories;
+package com.example.exercices.ex11.entities.repositories;
 
-import com.example.exercice11.entities.User;
+import com.example.exercices.ex11.entities.User;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Flux;

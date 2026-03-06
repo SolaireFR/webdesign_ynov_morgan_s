@@ -1,13 +1,13 @@
 services:
   mongo:
     image: mongo:8.2
-    container_name: exercice11-mongodb
+    container_name: exercices-mongodb
     ports:
       - "27017:27017"
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=EXO11hjkl
-      - MONGO_INITDB_DATABASE=exercice11
+      - MONGO_INITDB_DATABASE=exercices
     volumes:
       - mongo-data:/data/db
 
