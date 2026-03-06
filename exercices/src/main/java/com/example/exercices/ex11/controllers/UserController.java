@@ -3,6 +3,7 @@ package com.example.exercices.ex11.controllers;
 import com.example.exercices.ex11.entities.User;
 import com.example.exercices.ex11.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,6 +11,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
+@Profile("ex11")
 @RequestMapping("/api/users")
 public class UserController {
 

@@ -1,9 +1,11 @@
 package com.example.exercices.ex11.entities;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "users")
+@Profile("ex11")
 public class User {
     @Id
     private String id;

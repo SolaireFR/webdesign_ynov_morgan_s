@@ -4,7 +4,9 @@
 
 ## Lancement du projet
 ```bash
-mvn spring-boot:run
+mvn spring-boot:run "-Dspring-boot.run.profiles=ex11"
+ou
+mvn spring-boot:run "-Dspring-boot.run.profiles=ex12"
 ```
 
 ## Test du projet
