@@ -7,7 +7,10 @@
 - Maven
 
 ## Lancement du projet
+Les exercices peuvent-être lancer séparement ou ensemble celon les besoins. **/!\\ IL EST RECOMMANDER DE LES LANCER SEPAREMENT**
 ```bash
+mvn spring-boot:run
+ou
 mvn spring-boot:run "-Dspring-boot.run.profiles=ex11"
 ou
 mvn spring-boot:run "-Dspring-boot.run.profiles=ex12"

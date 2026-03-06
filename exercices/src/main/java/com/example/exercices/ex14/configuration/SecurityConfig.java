@@ -24,7 +24,7 @@ public class SecurityConfig {
     public SecurityWebFilterChain springSecurityFilterChain(ServerHttpSecurity http) {
         return http
                 .authorizeExchange()
-                .pathMatchers("/public/**").permitAll()
+                .pathMatchers("/api/**").permitAll() // TOUT EST AUTORISÉ POUR LES ENDPOINTS COMMENÇANT PAR /api/ (POUR LES AUTRES EXERCICES)
                 .pathMatchers(HttpMethod.GET, "/api/rooms/**").permitAll()
                 .pathMatchers(HttpMethod.POST, "/api/rooms/**").hasRole("ADMIN")
                 .pathMatchers(HttpMethod.DELETE, "/api/rooms/**").hasRole("ADMIN")
