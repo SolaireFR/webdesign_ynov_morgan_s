@@ -1,0 +1,153 @@
+{
+  "info": {
+    "_postman_id": "cbddaf67-3d5f-4929-8f89-455a3f94afc6",
+    "name": "Exercice14",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "38909088"
+  },
+  "item": [
+    {
+      "name": "ALL",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/rooms",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "rooms"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CREATE AUTH",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "root",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "root",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"CyberSalle\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/rooms",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "rooms"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE AUTH",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "password",
+              "value": "root",
+              "type": "string"
+            },
+            {
+              "key": "username",
+              "value": "root",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"CyberSalle\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/rooms/4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "rooms",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CREATE FORBIDDEN",
+      "request": {
+        "auth": {
+          "type": "basic",
+          "basic": [
+            {
+              "key": "username",
+              "value": "user",
+              "type": "string"
+            },
+            {
+              "key": "password",
+              "value": "user",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"CyberSalle\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/rooms",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "rooms"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
